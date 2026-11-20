@@ -66,7 +66,7 @@ const minor = suits.flatMap((suit, suitIndex) =>
       symbol: suit.symbol,
       keywords: `${suit.theme}、${rank[2]}`,
       meaning: `這張牌與${suit.theme}有關，${rank[2]}是目前值得關注的方向。`,
-      image: `/tarot/${String(id).padStart(2, '0')}.png`,
+      image: `${import.meta.env.BASE_URL}tarot/${String(id).padStart(2, '0')}.png`,
     }
   }),
 )
@@ -78,7 +78,7 @@ export const tarotDeck: TarotCard[] = [
     symbol: card[2],
     keywords: card[3],
     meaning: card[4],
-    image: `/tarot/${String(index).padStart(2, '0')}.png`,
+    image: `${import.meta.env.BASE_URL}tarot/${String(index).padStart(2, '0')}.png`,
   })),
   ...minor,
 ]

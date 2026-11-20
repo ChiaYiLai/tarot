@@ -28,7 +28,7 @@ function selectCategory(category: Category) {
 }
 
 const positionAcitveIndex = ref<number>(0)
-const positionsChoice: { id: string; name: string; description: string; positions: Array }[] = [
+const positionsChoice: { id: string; name: string; description: string; positions: string[] }[] = [
   {
     id: 'timeline',
     name: '經典時間流',
